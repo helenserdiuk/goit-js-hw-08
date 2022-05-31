@@ -31,7 +31,7 @@ const onCotactFormElChange = event => {
 
 const onContactFormSubmit = event => {
   event.preventDefault();
-
+  console.log(localStorageApi.load(CONTACT_FORM_LOCAL_STORAGE_KEY));
   localStorageApi.remove(CONTACT_FORM_LOCAL_STORAGE_KEY);
   event.currentTarget.reset();
 };
